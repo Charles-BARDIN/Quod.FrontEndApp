@@ -4,7 +4,7 @@
     angular
         .module('Quod.Core.Connectivity')
         .service('Quod.Core.Connectivity.JWSService', [
-            'AngularSoapService',
+            'Quod.Libs.AngularSoap.AngularSoapService',
             'Quod.Core.JwsDealerUrlConstant',
             JWSService
         ]);

@@ -2,7 +2,8 @@ angular.module('quod.frontEndApp')
     .controller('mainCtrl', [
         '$scope',
         'core.auth',
-        function mainCtrl($scope, auth) {
+        'connectivity.web-socket-dispatcher',
+        function mainCtrl($scope, auth, webSocketDispatcher) {
             $scope.message = "It works!";
         }
     ]);

@@ -5,6 +5,7 @@ angular.module('quod.frontEndApp')
         'core.auth',
         'core.connectivity.heart-beat',
         // Quotes
+        'quotes',
         // TimeAndSales
         // MarketDepth
         // Alerts
@@ -13,5 +14,5 @@ angular.module('quod.frontEndApp')
         // Movers
         // Orders
         // ProfitAndLoss
-        function webSocketDispatcher(jwsConnect, jwsWebSocket, auth, heartBeat) { }
+        function webSocketDispatcher(jwsConnect, jwsWebSocket, auth, heartBeat, quotes) { }
     ]);

@@ -1,0 +1,1 @@
+angular.module('quod.frontEndApp.users', []);

@@ -1,5 +1,5 @@
 angular.module('quod.frontEndApp')
-    .service('connectivity.web-socket-dispatcher', [
+    .service('web-socket-dispatcher', [
         'core.constants.jws-connect-url',
         'core.constants.jws-web-socket-url',
         'core.auth',

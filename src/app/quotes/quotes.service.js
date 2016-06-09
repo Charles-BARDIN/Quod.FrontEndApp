@@ -1,14 +1,19 @@
-angular.module('quod.frontEndApp.quotes')
-    .service('quotes', [
-        // JWSService
-        'core.connectivity.jws',
-        // ListingInstruments
-        // MDEntitlements
-        // SubscribeService
-        'core.connectivity.subscribe',
-        // Venues
-        // Markets
-        // GeneralUtilsService
-        // ProfitAndLoss
-        function quotesService() { }
-    ]);
+(function () {
+    'use strict';
+
+    angular
+        .module('Quod.FrontEndApp.Quotes')
+        .service('Quod.FrontEndApp.Quotes.QuotesService', [
+            'Quod.Core.Connectivity.JWSService',
+            // ListingInstruments
+            // MDEntitlements
+            'Quod.Core.Connectivity.SubscribeService',
+            // Venues
+            // Markets
+            // GeneralUtilsService
+            // ProfitAndLoss
+            QuotesService
+        ]);
+
+    function QuotesService() { }
+})();

@@ -1,6 +1,13 @@
-angular.module('quod.frontEndApp.core.connectivity')
-    .service('core.connectivity.heart-beat', [
-        'core.auth',
-        'core.constants.config',
-        function heartBeat(auth, config) { }
-    ]);
+(function () {
+    'use strict';
+
+    angular
+        .module('Quod.Core.Connectivity')
+        .service('Quod.Core.Connectivity.HeartBeatService', [
+            'Quod.Core.AuthService',
+            'Quod.Core.ConfigConstant',
+            HeartBeatService
+        ]);
+
+    function HeartBeatService(AuthService, ConfigConstant) { }
+})();

@@ -1,9 +1,16 @@
-angular.module('quod.frontEndApp')
-    .controller('mainCtrl', [
-        '$scope',
-        'core.auth',
-        'web-socket-dispatcher',
-        function mainCtrl($scope, auth, webSocketDispatcher) {
-            $scope.message = "It works!";
-        }
-    ]);
+(function () {
+    'use strict';
+
+    angular
+        .module('Quod.FrontEndApp')
+        .controller('Quod.FrontEndApp.MainController', [
+            '$scope',
+            'Quod.Core.AuthService',
+            'Quod.FrontEndApp.WebSocketDispatcherService',
+            MainController
+        ]);
+
+    function MainController($scope, AuthService, WebSocketDispatcherService) {
+        $scope.message = "It works!";
+    }
+})();

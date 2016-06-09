@@ -1,4 +1,9 @@
-angular.module('quod.frontEndApp.core.connectivity', [
-    'quod',
-    'quod.frontEndApp.core'
-]);
+(function () {
+    'use strict';
+
+    angular
+        .module('Quod.Core.Connectivity', [
+            'Quod.Libs.AngularSoap',
+            'Quod.Core'
+        ]);
+})();

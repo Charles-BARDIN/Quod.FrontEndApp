@@ -1,3 +1,8 @@
-angular.module('quod.frontEndApp.quotes', [
-    'quod.frontEndApp.core.connectivity'
-]);
+(function () {
+    'use strict';
+
+    angular
+        .module('Quod.FrontEndApp.Quotes', [
+            'Quod.Core.Connectivity'
+        ]);
+})();

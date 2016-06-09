@@ -1,6 +1,13 @@
-angular.module('quod.frontEndApp.core')
-    .service('core.auth', [
-        'core.connectivity.jws',
-        'users.find', /* was CommonService */
-        function auth(jws, users) { }
-    ]);
+(function () {
+    'use strict';
+
+    angular
+        .module('Quod.Core')
+        .service('Quod.Core.AuthService', [
+            'Quod.Core.Connectivity.JWSService',
+            'Quod.FrontEndApp.Users.UsersService', /* was CommonService */
+            AuthService
+        ]);
+
+    function AuthService(JWSService, UsersService) { }
+})();

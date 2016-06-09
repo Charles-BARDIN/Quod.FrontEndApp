@@ -1,5 +1,12 @@
-angular.module('quod.frontEndApp.core.connectivity')
-    .service('core.connectivity.subscribe', [
-        'core.connectivity.jws',
-        function subscribe(jws) { }
-    ]);
+(function () {
+    'use strict';
+
+    angular
+        .module('Quod.Core.Connectivity')
+        .service('Quod.Core.Connectivity.SubscribeService', [
+            'Quod.Core.Connectivity.JWSService',
+            SubscribeService
+        ]);
+
+    function SubscribeService(JWSService) { }
+})();

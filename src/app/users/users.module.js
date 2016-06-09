@@ -1,1 +1,6 @@
-angular.module('quod.frontEndApp.users', []);
+(function () {
+    'use strict';
+    
+    angular
+        .module('Quod.FrontEndApp.Users', []);
+})();

@@ -1,6 +1,13 @@
-angular.module('quod.frontEndApp.core.connectivity')
-    .service('core.connectivity.jws', [
-        'quod.angular-soap',
-        'core.constants.jws-dealer-url',
-        function jws($soap, jwsDealer) { }
-    ]);
+(function () {
+    'use strict';
+
+    angular
+        .module('Quod.Core.Connectivity')
+        .service('Quod.Core.Connectivity.JWSService', [
+            'AngularSoapService',
+            'Quod.Core.JwsDealerUrlConstant',
+            JWSService
+        ]);
+
+    function JWSService($soap, JwsDealer) { }
+})();

@@ -1,5 +1,12 @@
-angular.module('quod.frontEndApp.core.connectivity')
-    .service('core.connectivity.recovery', [
-        'core.connectivity.jws',
-        function recovery(jws) { }
-    ]);
+(function () {
+    'use strict';
+
+    angular
+        .module('Quod.Core.Connectivity')
+        .service('Quod.Core.Connectivity.RecoveryService', [
+            'Quod.Core.Connectivity.JWSService',
+            RecoveryService
+        ]);
+
+    function RecoveryService(JWSService) { }
+})();
